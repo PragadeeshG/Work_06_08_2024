@@ -1,0 +1,15 @@
+create table if not exists cloub_pub_sub_configuration(
+configuration_id Integer not null,
+configuration_owner varchar(255) null,
+active_cloub_pub_sub char null,
+configuration_type_id Integer null,
+configuration_type varchar(255) null,
+configuration_status varchar(255) null,
+configuration_description Integer null,
+relative_dependencies Integer null,
+parent_function varchar(255) null,
+flush_interval Integer null,
+build_conditions varchar(255) null,
+status varchar(255) null,
+obsolete_config_removal varchar(255) null,
+constraint cloub_pub_sub_configuration_pk primary key(configuration_id));
